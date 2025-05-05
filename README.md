@@ -11,7 +11,7 @@ Um jogo de lógica onde o objetivo é deduzir onde estão as bombas em meio ao c
 - HTML;
 - CSS;
 - Javascript;
-- CanvasJS.
+
   
 
 **Como jogar:**
