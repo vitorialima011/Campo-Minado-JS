@@ -1,0 +1,155 @@
+/* --- CONFIGURAÇÃO GLOBAL E FUNDO --- */
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    /* Altere a URL abaixo para modificar o fundo */
+    background: url('vietnam.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* --- BOTÃO DE INICIAR (estilo anterior com bordas suaves) --- */
+.start-button {
+    background:  #348a02;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.start-button:hover {
+    transform: scale(1.05);
+}
+
+/* --- MENU --- */
+.menu {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* --- TABULEIRO DE JOGO --- */
+#game-board {
+    display: grid;
+    gap: 1px;
+    margin: 0 auto;
+    background-color: black;  /* O espaço (gap) entre as células aparece em preto */
+}
+
+/* --- ESTILIZAÇÃO DAS CÉLULAS --- */
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #86af5f;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.cell.revealed {
+    background-color: #eee;
+    cursor: default;
+}
+
+.cell.bomb {
+    background-color: #f00;
+    color: #fff;
+}
+
+.cell.flag {
+    color: #000;
+}
+
+/* --- ÁREA PARA MENSAGENS (VITÓRIA/DERROTA) --- */
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* --- CAIXA DE DIÁLOGO (BANNER NO RODAPÉ) --- */
+.dialogue {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    z-index: 1000;
+    max-width: 80%;
+    display: none; /* Inicialmente oculta */
+    display: flex;
+    align-items: center;
+}
+
+/* Container para a imagem e legenda do personagem */
+.dialogue-character {
+    margin-right: 15px;
+}
+
+.dialogue-character img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    background-color: #fff; /* Fundo branco */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.dialogue-character .caption {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #000;
+}
+
+/* Se for apenas o herói, centraliza o container de personagem */
+.dialogue-character.centered {
+    margin: 0 auto;
+}
+
+/* Container para o texto do diálogo */
+#dialogue-text-container {
+    flex: 1;
+}
+
+#dialogue-content {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.dialogue-footer {
+    font-size: 12px;
+    font-style: italic;
+    opacity: 0.8;
+    color: #000;
+}
