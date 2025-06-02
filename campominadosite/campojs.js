@@ -273,15 +273,15 @@ function nextLevel() {
   } else if (currentLevel < 5) {
     levelDialogues = [
       `CORONEL: Soldado, mais uma missão concluída no nível ${currentLevel - 1}.`,
-      `HEROI: Coronel, você nunca pensou nas famílias destas pessoas nas quais já matamos?.`,
+      `HEROI: Coronel, você nunca pensou nas famílias que estavam na vila que invadimos?.`,
       `CORONEL: Não permita dúvidas, avance sem olhar para trás!`
     ];
   } else {
     levelDialogues = [
       `CORONEL: Soldado, você finalizou o nível ${currentLevel - 1}.`,
-      `HEROI: Já não posso ignorar o horror que vejo... Preciso agir!`,
-      `CORONEL: A disciplina é nossa maior arma. Siga as ordens, custe o que custar!`,
-      `HEROI: Talvez seja hora de fazer a justiça, mesmo que eu pague um preço alto!`
+      `HEROI: Não posso ignorar o que vejo... Preciso fazer algo!`,
+      `CORONEL: Não deixe que esses vermes o corrompam! Siga as ordens, custe o que custar!`,
+      `HEROI: Talvez seja hora de fugir desse limbo, mesmo que eu pague um preço alto!`
     ];
   }
   
