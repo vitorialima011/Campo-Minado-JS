@@ -14,9 +14,15 @@
 
 
 <img width="284" alt="image" src="https://github.com/user-attachments/assets/cbc8f70b-7633-46ee-bfa9-3b776dcb66f7" />
+
+<img width="224" alt="image" src="https://github.com/user-attachments/assets/96ebbeb8-a380-49b7-93e7-72291a67b58c" />
 <br><br/>
-<img width="488" alt="image" src="https://github.com/user-attachments/assets/eec068f6-063c-4098-807c-c331e1b641ee" />
+<img width="562" alt="image" src="https://github.com/user-attachments/assets/29e078c1-aedd-4763-bd37-4f70ed2b543c" />
 <br><br/>
+<img width="561" alt="image" src="https://github.com/user-attachments/assets/35205693-1cd1-44e5-b602-6afa151c111c" />
+
+
+
 
 
 
@@ -30,7 +36,7 @@
 
 **Melhorias futuras:**
 
- - Adicionar página inical com seleção de dificuldades, Efeitos Sonoros , Botão "jogar".
+ - Adicionar página inical com seleção de dificuldades, Efeitos Sonoros , Botão "Iniciar jogo".
  - Botão para reiniciar jogo;
  - Cronômetro do tempo de partida; 
  - Página de tutorial;
