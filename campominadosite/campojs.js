@@ -8,7 +8,7 @@ let currentLevel = 1;
 let gameEnded = false; // NOVO: controla fim da missão
 
 const tutorialDialogues = [
-  "CORONEL: Soldado, nossa missão é clara: desarmar as bombas espalhadas por essa selva para abrir caminho à nossa tropa para acabarmos com os vietnamitas.",
+  "CORONEL: Soldado, nossa missão é clara: desarmar as bombas espalhadas por essa selva para abrir caminho à nossa tropa para ganharmos dos   vietnamitas.",
   "CORONEL: Cada quadrado deste campo pode esconder uma bomba; os números mostram quantas há ao redor. Foque e seja preciso.",
   "CORONEL: No seu primeiro clique, garantiremos uma área segura para que você comece sem riscos.",
   "CORONEL: Avance com cautela, o destino desta missão está em suas mãos.",
