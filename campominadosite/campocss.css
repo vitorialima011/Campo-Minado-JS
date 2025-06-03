@@ -1,4 +1,4 @@
-/* --- CONFIGURAÇÃO GLOBAL E FUNDO --- */
+
 body {
     font-family: 'Press Start 2P', cursive;
     margin: 0;
@@ -20,8 +20,6 @@ h1 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-/* --- BOTÃO DE INICIAR (estilo anterior com bordas suaves) --- */
 .start-button {
     background:  #348a02;
     color: #fff;
@@ -38,8 +36,6 @@ h1 {
 .start-button:hover {
     transform: scale(1.05);
 }
-
-/* --- MENU --- */
 .menu {
     margin-bottom: 20px;
     padding: 10px;
@@ -47,16 +43,12 @@ h1 {
     border-radius: 8px;
     text-align: center;
 }
-
-/* --- TABULEIRO DE JOGO --- */
 #game-board {
     display: grid;
     gap: 1px;
     margin: 0 auto;
     background-color: black;  /* O espaço (gap) entre as células aparece em preto */
 }
-
-/* --- ESTILIZAÇÃO DAS CÉLULAS --- */
 .cell {
     width: 40px;
     height: 40px;
@@ -84,16 +76,12 @@ h1 {
 .cell.flag {
     color: #000;
 }
-
-/* --- ÁREA PARA MENSAGENS (VITÓRIA/DERROTA) --- */
 #message {
     margin-top: 20px;
     font-size: 18px;
     color: #fff;
     text-shadow: 2px 2px 4px #000;
 }
-
-/* --- CAIXA DE DIÁLOGO (BANNER NO RODAPÉ) --- */
 .dialogue {
     position: fixed;
     bottom: 20px;
@@ -105,12 +93,10 @@ h1 {
     border-radius: 8px;
     z-index: 1000;
     max-width: 80%;
-    display: none; /* Inicialmente oculta */
+    display: none; 
     display: flex;
     align-items: center;
 }
-
-/* Container para a imagem e legenda do personagem */
 .dialogue-character {
     margin-right: 15px;
 }
@@ -119,7 +105,7 @@ h1 {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    background-color: #fff; /* Fundo branco */
+    background-color: #fff; 
     border: 2px solid #ddd;
     border-radius: 8px;
 }
@@ -130,13 +116,9 @@ h1 {
     margin-top: 5px;
     color: #000;
 }
-
-/* Se for apenas o herói, centraliza o container de personagem */
 .dialogue-character.centered {
     margin: 0 auto;
 }
-
-/* Container para o texto do diálogo */
 #dialogue-text-container {
     flex: 1;
 }
