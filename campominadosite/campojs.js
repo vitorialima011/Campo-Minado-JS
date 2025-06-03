@@ -5,7 +5,7 @@ let gameOver = false;
 let firstMove = true;
 
 let currentLevel = 1;
-let gameEnded = false; // NOVO: controla fim da missão
+let gameEnded = false;
 
 const tutorialDialogues = [
   "CORONEL: Soldado, nossa missão é clara: desarmar as bombas espalhadas por essa selva para abrir caminho à nossa tropa para ganharmos dos   vietnamitas.",
@@ -81,7 +81,6 @@ function startGame() {
   if (dialogueActive || gameEnded) return;
 
   boardSize = 10 + (currentLevel - 1) * 2;
-  // A quantidade de bombas é ~15% do total, com acréscimo de 2 por nível.
   bombCount = Math.floor((boardSize * boardSize) * 0.15) + (currentLevel - 1) * 2;
 
   gameOver = false;
@@ -252,13 +251,13 @@ function nextLevel() {
 
   if (currentLevel === 4) {
     levelDialogues = [
-      `HEROI: Três vilarejos... centenas de corpos. E tudo isso para quê?`,
+      `HEROI: Três vilarejos... E tudo isso para quê?`,
       `CORONEL: Você fez o que era necessário, soldado. Nós limpamos o caminho.`,
       `HEROI: Caminho para quê, coronel? Para mais guerra? Para mais mentiras?`,
       `CORONEL: Está duvidando da missão?`,
       `HEROI: Já não sei mais quem é o inimigo.`,
-      `HEROI: Chega. Estou deixando tudo para trás. Mesmo que isso custe minha vida.`,
-      `NARRADOR: Na escuridão da selva, um soldado desapareceu. Alguns dizem que fugiu. Outros, que enfim encontrou paz.`
+      `HEROI: Chega. Estou deixando tudo para trás. Mesmo que isso tenha um custo alto.`,
+      `NARRADOR: Na escuridão da selva, um soldado desapareceu. Alguns dizem que fugiu. Outros, que encontrou paz.`
     ];
 
     gameEnded = true;
