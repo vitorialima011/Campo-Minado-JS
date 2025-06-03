@@ -3,38 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Campo Minado - Missão Vietnã</title>
-  <!-- Fonte de estilo retrô -->
+  <title>Campo Minado - Missão no Vietnã</title>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-  <!-- Referência para o CSS -->
   <link rel="stylesheet" href="campocss.css">
 </head>
 <body>
   <h1>Campo Minado</h1>
-  
-  <!-- Botão de Iniciar; ele só funciona se os diálogos já tiverem sido concluídos -->
   <div class="menu">
-      <button class="start-button" onclick="startGame()">Iniciar Jogo</button>
+      <button class="start-button" onclick="startGame()">Reiniciar Jogo</button>
   </div>
-  
-  <!-- Tabuleiro do jogo -->
   <div id="game-board"></div>
-  
-  <!-- Área para exibição de mensagens (vitória/derrota) -->
   <div id="message"></div>
-
-  <!-- Caixa de diálogo – banner fixado na parte inferior -->
   <div id="dialogue-box" class="dialogue">
-      <!-- Container para a imagem e legenda do personagem -->
       <div id="dialogue-character" class="dialogue-character"></div>
-      <!-- Container para o texto do diálogo -->
       <div id="dialogue-text-container">
          <div id="dialogue-content"></div>
          <div class="dialogue-footer">Pressione "Enter" para continuar</div>
       </div>
   </div>
-
-  <!-- Referência para o JavaScript -->
   <script src="campojs.js"></script>
 </body>
 </html>
