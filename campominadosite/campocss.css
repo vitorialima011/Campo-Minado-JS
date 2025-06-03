@@ -3,7 +3,6 @@ body {
     font-family: 'Press Start 2P', cursive;
     margin: 0;
     padding: 0;
-    /* Altere a URL abaixo para modificar o fundo */
     background: url('vietnam.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
